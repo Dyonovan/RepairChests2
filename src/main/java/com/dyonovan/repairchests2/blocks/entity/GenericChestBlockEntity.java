@@ -1,5 +1,6 @@
 package com.dyonovan.repairchests2.blocks.entity;
 
+import com.dyonovan.repairchests2.Config;
 import com.dyonovan.repairchests2.RepairChests2;
 import com.dyonovan.repairchests2.blocks.GenericChestBlock;
 import com.dyonovan.repairchests2.blocks.RCChestTypes;
@@ -63,7 +64,7 @@ public abstract class GenericChestBlockEntity extends RandomizableContainerBlock
     private final Supplier<Block> blockToUse;
 
     private int tickNum;
-    private final int ticktime = 20;
+    private final int tickTime;
 
     protected GenericChestBlockEntity(BlockEntityType<?> blockEntityType, BlockPos blockPos, BlockState blockState,
                                       RCChestTypes chestType, Supplier<Block> blockToUse) {
@@ -72,6 +73,12 @@ public abstract class GenericChestBlockEntity extends RandomizableContainerBlock
         this.items = NonNullList.withSize(chestType.size, ItemStack.EMPTY);
         this.chestType = chestType;
         this.blockToUse = blockToUse;
+
+        this.tickTime = switch(chestType) {
+            case BASIC -> Config.basicRepairTime * 20;
+            case ADVANCED -> Config.advancedRepairTime * 20;
+            case ULTIMATE -> Config.ultimateRepairTime * 20;
+        };
     }
 
     @Override
@@ -208,7 +215,7 @@ public abstract class GenericChestBlockEntity extends RandomizableContainerBlock
 
     public static void tick(Level level, BlockPos blockPos, BlockState blockState, GenericChestBlockEntity blockEntity) {
         ++blockEntity.tickNum;
-        if (blockEntity.tickNum >= blockEntity.ticktime) {
+        if (blockEntity.tickNum >= blockEntity.tickTime) {
             for (int c = 0; c < blockEntity.getContainerSize(); c++) {
                 ItemStack stack = blockEntity.getItem(c);
                 if (!stack.isEmpty() && stack.isDamageableItem() && stack.getDamageValue() > 0) {
