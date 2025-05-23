@@ -63,7 +63,7 @@ public abstract class GenericChestBlock extends BaseEntityBlock {
         return this.defaultBlockState().setValue(FACING, direction);
     }
 
-    @Override
+    /*@Override
     protected void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean movedByPiston) {
         if (!state.is(newState.getBlock())) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
@@ -76,7 +76,7 @@ public abstract class GenericChestBlock extends BaseEntityBlock {
         }
 
         super.onRemove(state, level, pos, newState, movedByPiston);
-    }
+    }*/
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
