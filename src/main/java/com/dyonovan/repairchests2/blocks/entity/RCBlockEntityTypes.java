@@ -13,4 +13,8 @@ public class RCBlockEntityTypes {
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BasicChestBlockEntity>> BASIC =
             BLOCK_ENTITIES.register("basic_chest", () -> new BlockEntityType<>(BasicChestBlockEntity::new, RCBlocks.BASIC_CHEST.get()));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AdvancedChestBlockEntity>> ADVANCED =
+            BLOCK_ENTITIES.register("advanced_chest", () -> new BlockEntityType<>(AdvancedChestBlockEntity::new, RCBlocks.ADVANCED_CHEST.get()));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<UltimateChestBlockEntity>> ULTIMATE =
+            BLOCK_ENTITIES.register("ultimate_chest", () -> new BlockEntityType<>(UltimateChestBlockEntity::new, RCBlocks.ULTIMATE_CHEST.get()));
 }

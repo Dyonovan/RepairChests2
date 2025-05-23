@@ -10,16 +10,20 @@ import org.jetbrains.annotations.NotNull;
 public class RCChestModels {
 
     public static final Material BASIC_CHEST_LOCATION = chestMaterial(false, "model/basic_chest");
+    public static final Material ADVANCED_CHEST_LOCATION = chestMaterial(false, "model/advanced_chest");
+    public static final Material ULTIMATE_CHEST_LOCATION = chestMaterial(false, "model/ultimate_chest");
     public static final Material VANILLA_CHEST_LOCATION = chestMaterial(true, "normal");
 
     public static Material chooseChestMaterial(RCChestTypes type) {
-        return getMaterial(type, BASIC_CHEST_LOCATION, VANILLA_CHEST_LOCATION);
+        return getMaterial(type, BASIC_CHEST_LOCATION, ADVANCED_CHEST_LOCATION, ULTIMATE_CHEST_LOCATION, VANILLA_CHEST_LOCATION);
     }
 
     @NotNull
-    private static Material getMaterial(RCChestTypes type, Material basicChestMaterial, Material vanillaChestMaterial) {
+    private static Material getMaterial(RCChestTypes type, Material basicChestMaterial, Material advancedChestMaterial, Material ultimateChestMaterial, Material vanillaChestMaterial) {
         return switch (type) {
             case BASIC -> basicChestMaterial;
+            case ADVANCED -> advancedChestMaterial;
+            case ULTIMATE -> ultimateChestMaterial;
             default -> vanillaChestMaterial;
         };
     }

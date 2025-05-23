@@ -25,6 +25,10 @@ public class RCBlocks {
 
     public static final DeferredBlock<BasicChestBlock> BASIC_CHEST = registerWithItem("basic_chest", BasicChestBlock::new,
             () -> properties, RCChestTypes.BASIC);
+    public static final DeferredBlock<AdvancedChestBlock> ADVANCED_CHEST = registerWithItem("advanced_chest", AdvancedChestBlock::new,
+            () -> properties, RCChestTypes.ADVANCED);
+    public static final DeferredBlock<UltimateChestBlock> ULTIMATE_CHEST = registerWithItem("ultimate_chest", UltimateChestBlock::new,
+            ()-> properties, RCChestTypes.ULTIMATE);
 
     public static <T extends Block> DeferredBlock<T> registerWithItem(String name, Function<BlockBehaviour.Properties, T> block,
                                                                       Supplier<BlockBehaviour.Properties> properties, RCChestTypes chestType) {

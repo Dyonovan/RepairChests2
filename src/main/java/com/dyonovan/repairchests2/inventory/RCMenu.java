@@ -27,6 +27,22 @@ public class RCMenu extends AbstractContainerMenu {
         return new RCMenu(RCMenuTypes.BASIC_CHEST.get(), containerID, playerInventory, inventory, RCChestTypes.BASIC);
     }
 
+    public static RCMenu createAdvancedContainer(int containerID, Inventory playerInventory) {
+        return new RCMenu(RCMenuTypes.ADVANCED_CHEST.get(), containerID, playerInventory, new SimpleContainer(RCChestTypes.ADVANCED.size), RCChestTypes.ADVANCED);
+    }
+
+    public static RCMenu createAdvancedContainer(int containerID, Inventory playerInventory, Container inventory) {
+        return new RCMenu(RCMenuTypes.ADVANCED_CHEST.get(), containerID, playerInventory, inventory, RCChestTypes.ADVANCED);
+    }
+
+    public static RCMenu createUltimateContainer(int containerID, Inventory playerInventory) {
+        return new RCMenu(RCMenuTypes.ULTIMATE_CHEST.get(), containerID, playerInventory, new SimpleContainer(RCChestTypes.ULTIMATE.size), RCChestTypes.ULTIMATE);
+    }
+
+    public static RCMenu createUltimateContainer(int containerID, Inventory playerInventory, Container inventory) {
+        return new RCMenu(RCMenuTypes.ULTIMATE_CHEST.get(), containerID, playerInventory, inventory, RCChestTypes.ULTIMATE);
+    }
+
     protected RCMenu(@Nullable MenuType<?> menuType, int containerId, Inventory playerInventory, Container inventory, RCChestTypes chestType) {
         super(menuType, containerId);
 

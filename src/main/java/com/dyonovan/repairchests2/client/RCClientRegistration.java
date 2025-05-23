@@ -30,11 +30,15 @@ public class RCClientRegistration {
     @SubscribeEvent
     public static void registerScreens(RegisterMenuScreensEvent event) {
         event.register(RCMenuTypes.BASIC_CHEST.get(), IronChestScreen::new);
+        event.register(RCMenuTypes.ADVANCED_CHEST.get(), IronChestScreen::new);
+        event.register(RCMenuTypes.ULTIMATE_CHEST.get(), IronChestScreen::new);
     }
 
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(RCBlockEntityTypes.BASIC.get(), RCChestRenderer::new);
+        event.registerBlockEntityRenderer(RCBlockEntityTypes.ADVANCED.get(), RCChestRenderer::new);
+        event.registerBlockEntityRenderer(RCBlockEntityTypes.ULTIMATE.get(), RCChestRenderer::new);
     }
 
     @SubscribeEvent
@@ -45,5 +49,7 @@ public class RCClientRegistration {
     @SubscribeEvent
     public static void registerSpecialBlockRenderers(RegisterSpecialBlockModelRendererEvent event) {
         event.register(RCBlocks.BASIC_CHEST.get(), new RCSpecialRenderer.Unbaked(RCSpecialRenderer.BASIC_CHEST_TEXTURE));
+        event.register(RCBlocks.ADVANCED_CHEST.get(), new RCSpecialRenderer.Unbaked(RCSpecialRenderer.ADVANCED_CHEST_TEXTURE));
+        event.register(RCBlocks.ULTIMATE_CHEST.get(), new RCSpecialRenderer.Unbaked(RCSpecialRenderer.ULTIMATE_CHEST_TEXTURE));
     }
 }

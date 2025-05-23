@@ -1,3 +1,9 @@
 {
-  "itemGroup.repairchests2": "Repair Chests 2"
+  "itemGroup.repairchests2": "Repair Chests 2",
+  "block.repairchests2.basic_chest": "Basic Chest",
+  "block.repairchests2.advanced_chest": "Advanced Chest",
+  "block.repairchests2.ultimate_chest": "Ultimate Chest",
+  "repairchests2.container.basic_chest": "Basic Repair Chest",
+  "repairchests2.container.advanced_chest": "Advanced Repair Chest",
+  "repairchests2.container.ultimate_chest": "Ultimate Repair Chest"
 }

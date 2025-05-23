@@ -1,5 +1,13 @@
-// 1.21.4	2025-05-23T09:57:15.032380396	Model Definitions - repairchests2
+// 1.21.4	2025-05-23T11:13:13.736860748	Model Definitions - repairchests2
+ce1f268b8c1b49b0de5b27ccac603803476e6a46 assets/repairchests2/blockstates/advanced_chest.json
 22f45ec43753397301a15a03bda22a0acd79c053 assets/repairchests2/blockstates/basic_chest.json
+dfc88816b9f7099c38362eced4608c47f0930420 assets/repairchests2/blockstates/ultimate_chest.json
+155307b248b1e282277bf12f47c34b62492a09b1 assets/repairchests2/items/advanced_chest.json
 4727c923b63584ac95ae7be069a4dc3a843ed217 assets/repairchests2/items/basic_chest.json
+642879f302d19f5e591b7fed1658dd208f83a2e2 assets/repairchests2/items/ultimate_chest.json
+1be4120b2700aa431f35b62b3aab39944ad737ca assets/repairchests2/models/block/advanced_chest.json
 cdb2b2b882a5983db765ebc24fd98d377aaa18a8 assets/repairchests2/models/block/basic_chest.json
+2d3f4c93e5690ebd1a054b9a3136a6abaf3239d1 assets/repairchests2/models/block/ultimate_chest.json
+c6999aca6fd864e67490cc5b876d878a31821623 assets/repairchests2/models/item/advanced_chest.json
 0a3596d830b1f9c182de4f031234805c71688815 assets/repairchests2/models/item/basic_chest.json
+b548fa0327e8fe3b07202cd5e0eca61886dd33b7 assets/repairchests2/models/item/ultimate_chest.json

@@ -3,6 +3,14 @@
     {
       "type": "minecraft:single",
       "resource": "repairchests2:model/basic_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "repairchests2:model/advanced_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "repairchests2:model/ultimate_chest"
     }
   ]
 }

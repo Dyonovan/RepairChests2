@@ -27,6 +27,8 @@ public class RCModelProvidor extends ModelProvider {
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         this.createChest(blockModels, itemModels, RCBlocks.BASIC_CHEST.get(), RepairChests2.prefix("block/basic_break"), RCSpecialRenderer.BASIC_CHEST_TEXTURE);
+        this.createChest(blockModels, itemModels, RCBlocks.ADVANCED_CHEST.get(), RepairChests2.prefix("block/advanced_break"), RCSpecialRenderer.ADVANCED_CHEST_TEXTURE);
+        this.createChest(blockModels, itemModels, RCBlocks.ULTIMATE_CHEST.get(), RepairChests2.prefix("block/ultimate_break"), RCSpecialRenderer.ULTIMATE_CHEST_TEXTURE);
     }
 
     public void createChest(BlockModelGenerators blockModels, ItemModelGenerators itemModels, Block chestBlock, ResourceLocation particleTexture, ResourceLocation texture) {

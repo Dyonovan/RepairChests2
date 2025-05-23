@@ -13,4 +13,8 @@ public class RCMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<RCMenu>> BASIC_CHEST = CONTAINERS.register("basic_chest",
             () -> new MenuType<>(RCMenu::createBasicContainer, FeatureFlags.REGISTRY.allFlags()));
+    public static final DeferredHolder<MenuType<?>, MenuType<RCMenu>> ADVANCED_CHEST = CONTAINERS.register("advanced_chest",
+            () -> new MenuType<>(RCMenu::createAdvancedContainer, FeatureFlags.REGISTRY.allFlags()));
+    public static final DeferredHolder<MenuType<?>, MenuType<RCMenu>> ULTIMATE_CHEST = CONTAINERS.register("ultimate_chest",
+            () -> new MenuType<>(RCMenu::createUltimateContainer, FeatureFlags.REGISTRY.allFlags()));
 }

@@ -25,6 +25,8 @@ import org.jetbrains.annotations.Nullable;
 public class RCSpecialRenderer implements NoDataSpecialModelRenderer {
 
     public static final ResourceLocation BASIC_CHEST_TEXTURE = RepairChests2.prefix("model/basic_chest");
+    public static final ResourceLocation ADVANCED_CHEST_TEXTURE = RepairChests2.prefix("model/advanced_chest");
+    public static final ResourceLocation ULTIMATE_CHEST_TEXTURE = RepairChests2.prefix("model/ultimate_chest");
 
     private final RCChestModel model;
     private final Material material;
