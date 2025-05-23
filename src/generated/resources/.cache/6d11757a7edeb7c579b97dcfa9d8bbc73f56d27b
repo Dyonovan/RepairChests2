@@ -1,0 +1,5 @@
+// 1.21.4	2025-05-23T09:57:15.032380396	Model Definitions - repairchests2
+22f45ec43753397301a15a03bda22a0acd79c053 assets/repairchests2/blockstates/basic_chest.json
+4727c923b63584ac95ae7be069a4dc3a843ed217 assets/repairchests2/items/basic_chest.json
+cdb2b2b882a5983db765ebc24fd98d377aaa18a8 assets/repairchests2/models/block/basic_chest.json
+0a3596d830b1f9c182de4f031234805c71688815 assets/repairchests2/models/item/basic_chest.json

@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "repairchests2:item/basic_chest",
+    "model": {
+      "type": "repairchests2:repair_chest",
+      "texture": "repairchests2:model/basic_chest"
+    }
+  }
+}

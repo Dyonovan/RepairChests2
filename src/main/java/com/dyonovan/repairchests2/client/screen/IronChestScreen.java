@@ -1,0 +1,52 @@
+package com.dyonovan.repairchests2.client.screen;
+
+import com.dyonovan.repairchests2.blocks.RCChestTypes;
+import com.dyonovan.repairchests2.inventory.RCMenu;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.screens.inventory.MenuAccess;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Inventory;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+
+@OnlyIn(Dist.CLIENT)
+public class IronChestScreen extends AbstractContainerScreen<RCMenu> implements MenuAccess<RCMenu> {
+
+    private final RCChestTypes chestType;
+    private final int textureXSize;
+    private final int textureYSize;
+
+    public IronChestScreen(RCMenu menu, Inventory playerInventory, Component title) {
+        super(menu, playerInventory, title);
+
+        this.chestType = menu.getChestType();
+        this.imageWidth = menu.getChestType().xSize;
+        this.imageHeight = menu.getChestType().ySize;
+        this.textureXSize = menu.getChestType().textureXSize;
+        this.textureYSize = menu.getChestType().textureYSize;
+    }
+
+    @Override
+    public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+        this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
+        super.render(guiGraphics, mouseX, mouseY, partialTicks);
+        this.renderTooltip(guiGraphics, mouseX, mouseY);
+    }
+
+    @Override
+    protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+        guiGraphics.drawString(this.font, this.title, 8, 6, 4210752, false);
+
+        guiGraphics.drawString(this.font, this.playerInventoryTitle, 8, (this.imageHeight - 96 + 2), 4210752, false);
+    }
+
+    @Override
+    protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
+        int x = (this.width - this.imageWidth) / 2;
+        int y = (this.height - this.imageHeight) / 2;
+
+        guiGraphics.blit(RenderType::guiTextured, this.chestType.guiTexture, x, y, 0, 0, this.imageWidth, this.imageHeight, this.textureXSize, this.textureYSize);
+    }
+}

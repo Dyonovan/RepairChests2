@@ -1,0 +1,8 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "repairchests2:model/basic_chest"
+    }
+  ]
+}
