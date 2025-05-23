@@ -11,9 +11,9 @@ import net.neoforged.neoforge.common.data.SpriteSourceProvider;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
-public class RCSpriteSourceProvidor extends SpriteSourceProvider {
+public class RCSpriteSourceProvider extends SpriteSourceProvider {
 
-    public RCSpriteSourceProvidor(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    public RCSpriteSourceProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(packOutput, lookupProvider, RepairChests2.MODID);
     }
 

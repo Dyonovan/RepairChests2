@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "repairchests2:basic_chest",
+    "minecraft:ender_pearl"
+  ],
+  "result": {
+    "count": 1,
+    "id": "repairchests2:advanced_chest"
+  }
+}

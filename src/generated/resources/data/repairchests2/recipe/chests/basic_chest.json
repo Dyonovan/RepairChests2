@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:anvil",
+    "L": "#minecraft:planks"
+  },
+  "pattern": [
+    "LLL",
+    "LAL",
+    "LLL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "repairchests2:basic_chest"
+  }
+}

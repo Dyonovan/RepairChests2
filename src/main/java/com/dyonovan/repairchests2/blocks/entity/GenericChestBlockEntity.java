@@ -213,8 +213,6 @@ public abstract class GenericChestBlockEntity extends RandomizableContainerBlock
                 ItemStack stack = blockEntity.getItem(c);
                 if (!stack.isEmpty() && stack.isDamageableItem() && stack.getDamageValue() > 0) {
                     stack.setDamageValue(stack.getDamageValue() - 1);
-                    blockEntity.tickNum = 0;
-                    return;
                 }
             }
             blockEntity.tickNum = 0;

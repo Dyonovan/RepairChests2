@@ -1,0 +1,4 @@
+// 1.21.4	2025-05-23T12:19:10.697596666	Loot Tables
+ce55c04ac1b8b0175990c315706e827605444241 data/repairchests2/loot_table/blocks/advanced_chest.json
+8943fe603cb290a0ed74688f8f0bbf5a0279be2f data/repairchests2/loot_table/blocks/basic_chest.json
+a427cff2d576699b96e79fe2483fff0e979fe61a data/repairchests2/loot_table/blocks/ultimate_chest.json

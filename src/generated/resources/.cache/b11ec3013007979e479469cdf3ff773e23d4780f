@@ -1,0 +1,7 @@
+// 1.21.4	2025-05-23T12:53:06.987422182	Repair Chests Recipes
+7a47ef2190d87293671498f02544f99900c03236 data/repairchests2/advancement/recipes/decorations/chests/advanced_chest.json
+60c2c1cb85e60eb34ee307eb4af52012d04dec24 data/repairchests2/advancement/recipes/decorations/chests/basic_chest.json
+a7d8162a53584a9987f9f3324c34c7e8b31d77a8 data/repairchests2/advancement/recipes/decorations/chests/ultimate_chest.json
+b2bf5c421ff5c20daf7e760ebbc8e109636cf9c3 data/repairchests2/recipe/chests/advanced_chest.json
+f14cb267d6a232457099116366ea281163924761 data/repairchests2/recipe/chests/basic_chest.json
+6203b35da391990af6e9bb403ee345e29476b8d0 data/repairchests2/recipe/chests/ultimate_chest.json

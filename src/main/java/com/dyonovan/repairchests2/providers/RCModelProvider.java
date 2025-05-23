@@ -18,9 +18,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-public class RCModelProvidor extends ModelProvider {
+public class RCModelProvider extends ModelProvider {
 
-    public RCModelProvidor(PackOutput packOutput) {
+    public RCModelProvider(PackOutput packOutput) {
         super(packOutput, RepairChests2.MODID);
     }
 

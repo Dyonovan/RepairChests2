@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "repairchests2:advanced_chest",
+    "minecraft:nether_star"
+  ],
+  "result": {
+    "count": 1,
+    "id": "repairchests2:ultimate_chest"
+  }
+}
